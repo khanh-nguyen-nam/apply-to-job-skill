@@ -1,5 +1,14 @@
 private/
+**/private/
 dist/
+resumes/
+applications/
+runs/
+*.xlsx
+*.pdf
+.env*
+*.pem
+*.key
 .DS_Store
 __pycache__/
 *.pyc

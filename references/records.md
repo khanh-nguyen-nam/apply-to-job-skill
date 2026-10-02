@@ -14,6 +14,7 @@ All mutable user data is under `private/` in the configured workspace. Read only
 | `jobright.json` | Observed connection, installation, profile-sync, and autofill-test state |
 | `job-boards.json` / `discovery-state.json` | Board access status, worldwide search sources, coverage and continuation |
 | `applications.csv` | One current record per employer requisition |
+| `applications.xlsx` (when configured) | Excel view of the current tracker; refresh after application runs and status reconciliation |
 | `events.jsonl` | Append-only application changes and submission attempts |
 | `authorization.md` | User's standing preferences and scope limits |
 | `runs/` | Scope, filters, resume IDs, requested limit, authorization, and outcome summary per run |
@@ -62,3 +63,8 @@ Generate a stable local `application_id` once. Before any update, re-read and ma
 Never bulk-reset unresolved or submitted records to `queued`. Sorting is optional and must preserve complete rows. Empty CSV means no locally recorded applications, not proof that the user has never applied elsewhere; reconcile relevant history before a first live batch.
 
 For Gmail, use [gmail-sync.md](gmail-sync.md). `submission_source` distinguishes bot, manual (only when known), and external_unknown. `status_updated_at` holds the event timestamp supporting the current status, not sync time. `last_email_at` can advance without changing status. `action_due_at` is populated only from an explicit deadline; otherwise leave blank. Preserve existing columns and data when adding fields.
+
+
+## Excel tracker
+
+When the workspace configures an Excel tracker, refresh that existing workbook from the latest CSV after a completed apply run or status reconciliation. Match by application ID and requisition identity, retain all tracker fields, and verify the changed application's status, applied time, resume delivery, and employer confirmation URL. Keep CSV/events as the canonical records; never import workbook edits or overwrite user-added sheets without reconciling them. Keep workbook data in the workspace's private folder, outside the distributable skill. Record export failures separately from application failures; an Excel write failure must never trigger resubmission.
