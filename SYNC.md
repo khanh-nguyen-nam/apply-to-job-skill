@@ -2,7 +2,7 @@
 
 This directory is the Git working copy installed as the `apply-to-job` Codex skill on both machines. The repository contains the skill only; applicant data belongs in the separate `mass-apply/private/` workspace and must never be added here.
 
-GitHub receives changes after you commit and push them. Before editing on either machine, pull first; after editing, commit and push; on the other machine, pull to receive the update.
+GitHub does not mirror unsaved edits. Changes sync after you commit and push them; pull on the other machine to receive them. On Linux, authenticate the private-repository checkout once with GitHub CLI: `gh auth login --hostname github.com --git-protocol https`, then run `gh auth setup-git`. Before editing on either machine, pull first; after editing, commit and push; on the other machine, pull to receive the update.
 
 ```sh
 cd ~/.codex/skills/apply-to-job
