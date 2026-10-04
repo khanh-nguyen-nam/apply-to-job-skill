@@ -4,7 +4,7 @@ The user authorized this personal snapshot in the private `khanh-nguyen-nam/appl
 
 `workspace.tar.gz` contains the saved application workspace, including approved resumes, profile and answers, authorization, Jobright-only preferences, CSV/Excel trackers, email evidence/review, application checkpoints, run summaries, and supporting workspace files. `manifest.json` records SHA-256 hashes of every included file. Browser sessions, authentication secrets, active locks, dependency links, and recursive sync backups are excluded.
 
-Current workflow: Jobright discovery and Apply with Autofill; local-sheet tracking after the final Gmail snapshot. Recurring Gmail status sync is paused. Narrow sign-in-code reads remain authorized. Linux application schedule uses GPT-6 Sol / Low; the paused Gmail schedule retains GPT-6 Luna / Medium.
+Current workflow: Jobright discovery and Apply with Autofill; local-sheet tracking after the final Gmail snapshot. Recurring Gmail status sync is paused. Narrow sign-in-code reads and matching account activation links after authorized employer signup remain authorized. Use the approved common email and an accessible saved common password; keep credentials and activation tokens out of GitHub. Linux application schedule uses GPT-6 Sol / Low; the paused Gmail schedule retains GPT-6 Luna / Medium.
 
 ## Pull and stage on Mac
 
