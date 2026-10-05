@@ -1,10 +1,10 @@
 {
-  "created_at": "2026-10-05T16:44:50.851443+00:00",
+  "created_at": "2026-10-05T16:46:17.188232+00:00",
   "source_workspace": "/Users/macboookpro/khanh-dev/mass-apply",
   "mac_workspace": "/Users/macboookpro/khanh-dev/mass-apply",
   "file_count": 799,
   "application_rows": 382,
-  "archive_sha256": "844f3f5799172b66f60744e759b5f26c79f5e814a48a7f030e8e38882f842373",
+  "archive_sha256": "49f6cd417f39a7d945f712b1300e1fdbbbe0c6446a571a95a19d70e53777cf0e",
   "files": {
     "private/browser-approvals.json": "4cae165f4c79a738336731e46edf5ca6980b426e6c874eefa63c9b4ca91b5da4",
     "private/gmail-messages.jsonl": "374dc4d9bcb472999b11bb87dbe429b2de322cb19a396f0b2f9351c0cec3244d",
