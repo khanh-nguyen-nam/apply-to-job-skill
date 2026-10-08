@@ -15,6 +15,10 @@ Do not import another applicant's profile, tracker, exclusions, salary targets, 
 
 When preferences contain user-reported alternative graduation plans, use the selected role track's expected date consistently across the application and approved resume. Do not interpret a future plan as a completed degree or proof of enrollment/return-to-school eligibility. Resolve a conflict with the uploaded resume or a question requiring a fixed fact before answering it.
 
+Persist confirmed follow-up answers in `private/answers.json` and update the corresponding profile/preferences fields with their provenance. Reuse these records before asking again. Keep employer-specific answers and batch scope separate from standing preferences. When the user supplies a calendar rule for an expected graduation date, calculate the exact date for each confirmed track year and save both the rule and result; check complete-date fields rather than relying on an enabled Submit button. Index supplied transcripts in `private/documents.json` without inferring academic year, completed work terms, or formal co-op enrollment from the transcript alone.
+
+Honor saved portal recovery delays and minimum submission intervals in `private/preferences.json`. After an error refresh, verify the actual resume attachment, profile answers, and submission state before continuing; elapsed time is not evidence of recovery. Apply saved Excel status exclusions to the display only, retaining canonical application/event history for duplicate checks and preserving unrelated workbook content.
+
 ## Choose the requested mode
 
 - **Setup:** collect missing facts, index actual resume files, connect Jobright, and resolve profile conflicts. This is not permission to apply to newly discovered jobs.

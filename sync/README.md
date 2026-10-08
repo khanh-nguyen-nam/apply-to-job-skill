@@ -23,3 +23,7 @@ Ask Codex on the Mac to reconcile that staged snapshot with `/Users/macboookpro/
 `linux-automations/` contains schedule exports for reference. Do not copy them into the Mac automation directory or enable duplicate schedules; Linux remains the execution host. Authenticate GitHub and Jobright separately on Mac. Keep installed private directories owner-only (700) and files owner-only (600).
 
 The latest sheet is `private/applications.xlsx` within the snapshot. New emailed outcomes after the final snapshot are not automatically imported.
+
+## Latest Mac snapshot — October 8, 2026
+
+Includes the updated Apple application evidence and tracker, saved follow-up answers and authorization, and user timing preferences: wait at least 60 seconds before refreshing portal errors and at least 120 seconds between application submissions. The Excel Applications view now excludes skipped jobs while canonical CSV/events retain them for duplicate prevention. The snapshot contains 1,185 canonical application records and 532 Excel application rows. Preserve unknown submission outcomes and reconcile newer destination changes before installing.
