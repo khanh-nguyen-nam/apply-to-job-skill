@@ -1,0 +1,4 @@
+interface:
+  display_name: "Jobright Job Applications"
+  short_description: "Autofill applications and track verified submissions"
+  default_prompt: "Use $apply-to-job to check my setup, then apply to my selected jobs using my verified profile and resume."
