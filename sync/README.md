@@ -1,5 +1,9 @@
 # Mac workspace sync
 
+## Check before syncing
+
+Read [Application continuation instructions](../APPLICATION-INSTRUCTIONS.md) before resuming applications or updating this repository. Verify current repository visibility on GitHub before uploading or restoring personal snapshots. Historical private-repository wording below records the original authorization; it does not establish current visibility or authorize new personal-data publication to a public repository. An instruction-only update must leave workspace archives and their manifests unchanged.
+
 The user authorized this personal snapshot in the private `khanh-nguyen-nam/apply-to-job-skill` repository on October 4, 2026. Keep this repository private. The reusable skill remains at the repository root; never include `sync/` in a distributable skill package.
 
 `workspace.tar.gz` contains the saved application workspace, including approved resumes, profile and answers, authorization, Jobright-only preferences, CSV/Excel trackers, email evidence/review, application checkpoints, run summaries, and supporting workspace files. `manifest.json` records SHA-256 hashes of every included file. Browser sessions, authentication secrets, active locks, dependency links, and recursive sync backups are excluded.
